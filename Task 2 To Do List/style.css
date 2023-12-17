@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: url('./images/todo-list-pic.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding-block: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 700px;
+    height: fit-content;
+    margin-top: 5vh;
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 2rem;
+    box-shadow: 0px 0px 30px 0px #0000004D;
+
+
+}
+
+.app-title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.app-title i {
+    font-size: 26px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid #000000
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #C1121F;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: all .25s ease;
+}
+
+button:hover {
+    filter: brightness(.8);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+ul::-webkit-scrollbar {
+    scrollbar-color: #f92f60 #00000030;
+    width: 7px;
+}
+
+ul::-webkit-scrollbar-track {
+    background: #00000030;
+    border-radius: 12px;
+    margin-block: 30px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background: #f92f60;
+    border-radius: 12px;
+    border: 2px solid #00000030;
+}
+
+ul li {
+    font-size: 20px;
+    user-select: none;
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #780000;
+    padding: 10px 60px 10px 20px;
+    max-width: 600px;
+    text-wrap: wrap;
+}
+
+ul .checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 18px;
+}
